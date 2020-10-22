@@ -1,7 +1,7 @@
 # Site settings
 title:  Sacroo
 description: 네트워크 공부를 하며 얻은 지식을 공유하고자 합니다! :-)
-baseurl: "/sacroo" # the subpath of your site, e.g. /blog
+baseurl: "/sacroo89" # the subpath of your site, e.g. /blog
 url: "https://sacroo89.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings

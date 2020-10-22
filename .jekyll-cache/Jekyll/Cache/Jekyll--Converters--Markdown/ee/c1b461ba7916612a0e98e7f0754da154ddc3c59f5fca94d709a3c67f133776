@@ -1,0 +1,77 @@
+I"�$<h2 id="introdução">Introdução</h2>
+
+<p>Estou aqui de novo para mais uma <strong>#dicarapida</strong> sobre um assunto que é bastante importante, mas muita gente esquece ou não faz de forma correta, que são as Meta Tags Sociais.</p>
+
+<p>Hoje em dia, as redes sociais são fundamentais para que a gente consiga alcançar um maior número de pessoas. Antes isso ficava mais a cargo das pesquisas orgânicas, ads e outros modelos de divulgação (email marketing, spots de rádio, tv, etc).</p>
+
+<p>No meu blog, muito do acesso é dado pelas redes sociais, sendo o facebook o maior propagador, acho que é porque sigo os passos do <a href="http://blog.da2k.com.br/">Fernando Daciuk</a> e mando spam para todos os grupos do face =p</p>
+
+<p>Segue o gráfico abaixo, indicando as origens de acessos do meu blog:</p>
+
+<p><img src="/assets/img/dica-rapida-2/canais.png" alt="Gráfico de Acessos do Blog por Origem" /></p>
+
+<h2 id="mas-e-por-que-dessa-tal-de-meta-tag">Mas e por que dessa tal de Meta Tag?</h2>
+
+<p>Cada rede social possui um conjunto de informações para serem lidas e elas serão enviadas do seu site para as redes através dessas Meta Tags. Isso que permite que as redes leiam seu link e já preencham o post de informações. Elas podem ser visíveis para os outros usuários, como: imagem, título, descrição, hiperlink. Mas também podem ser informações somente para análise da rede social, como o tipo do site (blog, website, ecommerce), autor, hora de publicação, tags e etc.</p>
+
+<h2 id="facebook">Facebook</h2>
+
+<p>A maior rede social que temos hoje possui um conjunto de informações que é o chamado <a href="https://developers.facebook.com/docs/sharing/best-practices?locale=pt_BR">Open Graph</a>. A partir dela conseguimos organizar bastante as informações e inclusive fazer uma análise do nosso site utilizando o Facebook Insights.</p>
+
+<p>Existem vários tipos de Meta Tags que o Open Graph suporta e todas elas são sempre iniciadas com o prefixo <code class="language-plaintext highlighter-rouge">og:</code>, caso queira saber todas que tem, basta dar uma olhada lá no site do <a href="https://developers.facebook.com/docs/sharing/best-practices#tags">Open Graph</a>.</p>
+
+<p>Abaixo seguem algumas das tags principais, das quais inclusive utilizo no meu blog:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Social: Facebook / Open Graph --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"fb:admins"</span> <span class="na">content=</span><span class="s">"id do seu fb insight"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:url"</span> <span class="na">content=</span><span class="s">"url do seu site"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:type"</span> <span class="na">content=</span><span class="s">"tipo do link, article, page, etc"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:title"</span> <span class="na">content=</span><span class="s">"título do site"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:image"</span> <span class="na">content=</span><span class="s">"imagem do site (LINK ABSOLUTO)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:description"</span> <span class="na">content=</span><span class="s">"breve descrição"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"og:site_name"</span> <span class="na">content=</span><span class="s">"Nome do site"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"article:author"</span> <span class="na">content=</span><span class="s">"fb de quem escreveu"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"article:publisher"</span> <span class="na">content=</span><span class="s">"fb de quem publicou"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"article:published_time"</span> <span class="na">content=</span><span class="s">"momento de publicação"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"article:tag"</span> <span class="na">content=</span><span class="s">"tag1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"article:tag"</span> <span class="na">content=</span><span class="s">"tag2"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>Tendo esse conjunto de informações, quando você for colocar seu link em algum lugar do facebook, ele vai ler as informações e colocar semelhante a imagem abaixo:</p>
+
+<p><img src="/assets/img/dica-rapida-2/face-post.png" alt="Imagem de um post no Facebook" /></p>
+
+<p><strong>AVISO:</strong> o facebook é uma bosta para ler seus links corretamente, portanto, utilize a ferramenta de <a href="https://developers.facebook.com/tools/debug/og/object/">debug</a>, para que ele possa ler os dados e identificar se está tudo certinho. Lembre-se também de seguir as regras do facebook, como, por exemplo, tamanhos de imagem e dados passados.</p>
+
+<h2 id="twitter">Twitter</h2>
+
+<p>Outra grande rede social, um pouco mais simples, mas que também permite carregar certas informações. Esses dados são chamados de Twitter Cards e são iniciados com o prefixo <code class="language-plaintext highlighter-rouge">twitter:</code>. Para saber um pouquinho mais, <a href="https://dev.twitter.com/cards/overview">leia a documentação deles</a></p>
+
+<p>Seguem as tags básicas:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Social: Twitter --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:card"</span> <span class="na">content=</span><span class="s">"summary_large_image"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- aqui fica o tipo de card --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:site"</span> <span class="na">content=</span><span class="s">"@willian_justen"</span><span class="nt">&gt;</span> <span class="c">&lt;!-- twitter handler do site --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:title"</span> <span class="na">content=</span><span class="s">"Título do Post"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"twitter:description"</span> <span class="na">content=</span><span class="s">"Descrição do post"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">property=</span><span class="s">"twitter:image:src"</span> <span class="na">content=</span><span class="s">"link da imagem"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<p>Para que o twitter passe a aceitar seus cards, você precisa validar <a href="https://cards-dev.twitter.com/validator">neste link aqui</a>. Após validado, quando você postar algum link do seu site, ele será visualizado conforme a imagem abaixo:</p>
+
+<p><img src="/assets/img/dica-rapida-2/twitter-post.png" alt="Imagem de um post no twitter" /></p>
+
+<h2 id="google-plus">Google Plus</h2>
+
+<p>Por último, mas não menos importante, vem o Google Plus. Apesar de muita gente achar inútil, ele tem uma indexação excelente e por ser do google, muitas vezes é favorecido, portanto, não vamos esquecer dele =p</p>
+
+<p>Ele segue o padrão do <a href="http://schema.org/">Schema.org</a> e seguem abaixo as tags:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"author"</span> <span class="na">href=</span><span class="s">"google plus do autor"</span><span class="nt">&gt;</span>
+<span class="c">&lt;!-- Social: Google+ / Schema.org  --&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"name"</span> <span class="na">content=</span><span class="s">"Título da página"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"description"</span> <span class="na">content=</span><span class="s">"Pequena descrição"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">itemprop=</span><span class="s">"image"</span> <span class="na">content=</span><span class="s">"imagem da página"</span><span class="nt">&gt;</span></code></pre></figure>
+
+<h2 id="conclusão">Conclusão</h2>
+
+<p>Com isso fecho a <strong>#dicarapida</strong> de hoje, espero que tenham entendido a importância dessas meta tags e consigam mais relevância em suas postagens e/ou sites. Se tiverem alguma dúvida ou alguma informação a acrescentar, só falar nos comentários logo abaixo =)</p>
+:ET
